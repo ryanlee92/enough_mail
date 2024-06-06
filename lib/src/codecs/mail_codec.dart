@@ -404,6 +404,8 @@ abstract class MailCodec {
   /// Set [wrapAtWordBoundary] to true in case the text should be wrapped
   /// at word boundaries / spaces.
   static String wrapText(String text, {bool wrapAtWordBoundary = false}) {
+    return text;
+    
     if (text.length <= MailConventions.textLineMaxLength) {
       return text;
     }
